@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./nav.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.responsive.css">
+  <title>Portfolio - Sobre</title>
+</head>
+<body>
+  
+
+  <!-- <div class="container-principal"> -->
+    <!-- <div className="Bar-Content"> -->
+      <nav id="nav" class="Nav-Content Nav-Content-White">
+        <ul class="Nav">
+
+          <li class="item active">
+            <a href="#sobre" onclick="transitionScroll('sobre')">Sobre mi</a>
+          </li>
+          <li class="item">
+            <a href="#aptitudes" onclick="transitionScroll('aptitudes')">Aptitudes</a>
+          </li>
+          <li class="item">
+            <a href="#proyectos" onclick="transitionScroll('proyectos')">Proyectos</a>
+          </li>
+          <li class="item">
+            <a href="#Habilidades" onclick="transitionScroll('Habilidades')">Habilidades</a>
+          </li>
+          <!-- <li class="li-none-style">
+            Modo oscuro
+            <div class="dark" onClick={props.onClick}></div>
+          </li> -->
+        </ul>
+      </nav>
+    <!-- </div> -->
+    
+    <section id="sobre" class="section about-me">
+      
+      <div class="content1">
+        
+        <!-- <p className='h3-container-aboutme'>
+          Hola, soy
+        </p> -->
+        <!-- <h1 class="name">
+          ANDRES QUINTERO
+        </h1> -->
+        <h1 class="min-desc">Desarrollador Backend</h1>
+        <p class="text">
+          Enfocado en la transición de una idea del mundo real al mundo de la programación. Me gusta solucionar problemas complejos que se presentan en base a mi conocimiento o relacionado a ello. 
+          <!-- Soy una persona que se dedica al aprendizaje autodidacta realizando proyectos personales, freelance y cursos en línea para ampliar cada vez mis conocimientos. Además, estoy estudiando Ing. De sistemas realizando 8mo semestre. -->
+        </p>
+
+        <div id="btns-anchor">
+
+          <!-- <a class="btn-anchor" href="#projects">Ver mas</a> -->
+          <a class="btn-anchor" href="https://drive.google.com/file/d/1si3p6YE5SMsM0iUNWsRDd9QnW5JpXFV9/view?usp=drive_link">CV</a>
+          <a class="btn-anchor" href="/projects.html">
+            Ver proyectos
+            <img src="/imgs/About/enlace.svg" alt="Descripción del SVG" width="20" height="20">
+          </a>
+        </div>
+        
+      </div>
+
+      <div class="content2">
+        <img src="./imgs/About/profile.png" alt="">
+        <!-- <h1>Andres Felipe Quintero</h1> -->
+      </div>
+    </section>
+
+    <section id="aptitudes" class="section aptitudes">
+      <!-- <h1>Aptitudes</h1> -->
+      <ul>
+        <li>Liderazgo</li>
+        <li>Gran capacidad de aprendizaje</li>
+        <li>Resolución de problemas</li>
+        <li>Desarrollo en equipo</li>
+        <li>Adaptabilidad</li>
+        <li>Pensamiento analítico</li>
+      </ul>
+    </section>
+
+
+    <section id="proyectos" class="section container-services">
+
+      
+      <!-- <h1>Proyectos</h1> -->
+      <div class="card-v">
+        <div class="card-v-main">
+
+          <div class="card-v-content">
+            <h3 class="card-v-title">
+              Análisis numérico app
+            </h3>
+            <lu class="tools">
+              <li>
+                <img title="React" class="" src="./imgs/Projects/tools/react.png" alt="">
+              </li>
+              <li>
+                <img title="Bootstrap" class="" src="./imgs/Projects/tools/bootstrap.svg" alt="">
+              </li>
+            </lu>
+            <p class="card-v-text">
+              Facilitamos el uso del método de bisección mostrando paso a paso cada iteración en una lista, 
+              junto con el resultado de cada cálculo. El usuario solo necesita ingresar los datos iniciales: 
+              un porcentaje aproximado al que desea llegar y dos intervalos, uno superior y otro inferior.
+            </p>
+
+          </div>
+
+          <div class="card-v-btn">
+            <a class="btn-anchor" href="https://analisis-numerico-app.vercel.app/">Pagina web</a>
+            <a class="btn-git" href="https://github.com/Andres-021/analisis_numerico_app">Github</a>
+          </div>
+
+        </div>
+
+        <div class="images">
+          <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="">
+        </div>
+      </div>
+      
+      <div class="card-v">
+        <div class="card-v-content">
+          <h3 class="card-v-title">
+            Calculadora de resistencia
+          </h3>
+          <lu class="tools">
+            <li>
+              <img title="React" class="" src="./imgs/Projects/tools/react.png" alt="">
+            </li>
+            <li>
+              <img title="Css" class="" src="./imgs/Projects/tools/css3.png" alt="">
+            </li>
+          </lu>
+          <p class="card-v-text">
+            Facilita el calculo para hallar el valor de la resistencia de una forma mas rápida
+            automatizando el proceso con solo seleccionar los valores en los campos requeridos.
+          </p>
+          <a class="btn-anchor" href="https://calculadora-resistencia.vercel.app/">Pagina web</a>
+          <a class="btn-git" href="https://github.com/Andres-021/calculadora-resistencia">Github</a>
+        </div>
+        <div class="images">
+          <img class="" src="./imgs/Projects/calculador-resistencia.png" alt="">
+        </div>
+      </div>
+
+      <a id="more-projects" href="/projects.html">
+        <img src="/imgs/Projects/tools/projects-w.svg" alt="Descripción del SVG">
+        Ver mas
+      </a>
+    </section>
+
+
+    <section id="Habilidades" class="section container-tools">
+      <!-- <h1>Habilidades</h1> -->
+
+      <div class="scroll" style="--t:20s"> 
+
+        <!-- <div class="scroll1"> -->
+          <div class="images">
+
+            <img src="./imgs/Lenguages/node.svg" width="140" height="140"/>
+          </div>
+          <div class="images">
+
+            <img src="./imgs/Lenguages/html.svg" width="140" height="140"/>
+          </div>
+          <div class="images">
+
+            <img src="./imgs/Lenguages/java.svg" width="140" height="140"/>
+          </div>
+          <div class="images">
+
+            <img src="./imgs/Lenguages/python.svg" width="140" height="140"/>
+          </div>
+          <div class="images">
+
+            <img src="./imgs/Lenguages/javascript.svg" width="140" height="140"/>
+          </div>
+          <div class="images">
+
+            <img src="./imgs/Lenguages/php.svg" width="140" height="140"/>
+          </div>
+          <div class="images">
+
+            <img src="./imgs/Lenguages/c-sharp.svg" width="140" height="140"/>
+          </div>
+          <div class="images">
+
+            <img src="./imgs/Lenguages/sql.svg" width="140" height="140"/>
+          </div>
+          <div class="images">
+
+            <img src="./imgs/Lenguages/github.svg" width="140" height="140"/>
+          </div>
+        <!-- </div> -->
+
+        <!-- <div>
+          <img src="./imgs/Lenguages/node.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/html.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/java.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/python.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/javascript.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/sql.svg" width="80" height="80"/>
+        </div> -->
+
+      </div>
+
+      <!-- <div class="scroll" style="--t:10s"> 
+
+        <div>
+          <img src="./imgs/Lenguages/node.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/html.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/java.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/python.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/javascript.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/sql.svg" width="80" height="80"/>
+        </div>
+
+        <div>
+          <img src="./imgs/Lenguages/node.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/html.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/java.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/python.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/javascript.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/sql.svg" width="80" height="80"/>
+        </div>
+
+      </div>
+
+      <div class="scroll" style="--t:40s"> 
+
+        <div>
+          <img src="./imgs/Lenguages/node.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/html.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/java.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/python.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/javascript.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/sql.svg" width="80" height="80"/>
+        </div>
+
+        <div>
+          <img src="./imgs/Lenguages/node.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/html.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/java.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/python.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/javascript.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/sql.svg" width="80" height="80"/>
+        </div>
+
+      </div>
+
+      <div class="scroll" style="--t:20s"> 
+
+        <div>
+          <img src="./imgs/Lenguages/node.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/html.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/java.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/python.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/javascript.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/sql.svg" width="80" height="80"/>
+        </div>
+
+        <div>
+          <img src="./imgs/Lenguages/node.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/html.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/java.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/python.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/javascript.svg" width="80" height="80"/>
+          <img src="./imgs/Lenguages/sql.svg" width="80" height="80"/>
+        </div>
+
+      </div> -->
+    </section>
+
+
+    <footer>
+        <!-- <div class="columns">
+          <h2>Redes sociales</h2>
+          <div class="columns">
+            <a href="https://www.facebook.com/andresfelipe.quinterobautista/">Facebook</a>
+          </div>
+        </div> -->
+
+      <h4>© Desarrollado por <a href="https://github.com/andres-021">Andres-021</a></h4>
+
+      <!-- <div class="columns">
+        <h2>Contato</h2>
+        <button>Generar codigo QR</button>
+      </div> -->
+    </footer>
+
+  <!-- </div> -->
+  
+  <script src="./script.js"></script>
+</body>
+</html>

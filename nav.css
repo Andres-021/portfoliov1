@@ -1,0 +1,203 @@
+:root{
+  --c-extra: ;
+  --color:#808080;
+  --fnd : #ffffff;
+  --fndRsp: white;
+  --colorRsp: black;
+  --padd: 250px;
+
+  /* --btn: #365486; */
+  --btn: #0B97E6;
+  --btn-hover: #0F1035;
+}
+
+
+/* Mobile menu */ 
+@media screen and (max-width: 500px){
+
+  .Nav-Content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* Color */
+    background: var(--fnd);
+
+    color: var(--color);
+    /* Posicionamiento y fijado */
+    position: fixed;
+    z-index: 999;
+    /* Centrado y flote */
+    top: 0;
+
+    height: 60px;
+    width: 100%;
+  }
+  
+  .Nav-Content .Nav {
+    list-style: none;
+    overflow: hidden; /* Limpiamos errores de float */
+  }
+  
+  .Nav-Content .Nav li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  .Nav-Content .Nav li a {
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+}
+
+.Nav-Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Color */
+  /* background: var(--fnd); */
+
+  color: var(--color);
+  /* Posicionamiento y fijado */
+  position: fixed;
+  z-index: 999;
+  /* Centrado y flote */
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  margin-left: 0px;
+
+}
+
+
+.Nav-Content-White{
+  color: var(--fnd);
+
+  &&>.Nav{
+
+    &&>li{
+      /* border-top: 2px solid #0F1035;
+      border-bottom: 2px solid #0F1035; */
+
+      &&:hover{
+        color: var(--btn);
+        border-top: 2px solid var(--btn);
+        border-bottom: 2px solid var(--btn);
+
+      }
+    }
+  }
+}
+
+
+/* .Nav-Content .Nav{
+    margin:0 0px 0 0;
+  } */
+
+/* .Nav-Content .Nav-Tittle{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex: 1;
+    background:var(--fnd);
+    color:var(--color);
+    height:auto;
+  }
+
+  .Nav-Content .Nav-Tittle .logo{
+    margin: 10px 10px;
+  } */
+
+/* .Nav-Content .Nav{
+    display:flex;
+    list-style:none;
+    align-items: center;
+    padding-left: 100px;
+    overflow: hidden;
+  } */
+
+.Nav-Content .Nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 80%;o lo necesario */
+  margin: auto;
+  padding-left: 0;
+}
+
+/* .Nav-Content .Nav li{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding: 20px 40px;
+    height:100%;
+    width: 100%;
+  } */
+
+.Nav-Content .Nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 120px;
+  margin-top: 10px;
+  border-top: 2px solid #0F1035;
+  border-bottom: 2px solid #0F1035;
+
+  font-size: 18px;
+  font-weight: bold;
+  
+  transition: 0.5s;
+}
+
+.Nav-Content .Nav .li-none-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius:50%; */
+  height: 50px;
+  width: 160px;
+  margin-top: 10px;
+  border-top: 0px solid var(--color);
+  border-bottom: 0px solid var(--color);
+  transition: 0.5s;
+
+  font-size: 14px;
+}
+
+.Nav-Content .Nav li:hover {
+  /* background: var(--color); */
+  background: transparent;
+  color: var(--fnd);
+  cursor: pointer;
+  border-top: 2px solid var(--fnd);
+  border-bottom: 2px solid var(--fnd);
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.Nav-Content .Nav .li-none-style:hover {
+  background: transparent;
+  color: rgb(212, 212, 212);
+  /* cursor: pointer; */
+  border-top: 0px solid var(--fnd);
+  border-bottom: 0px solid var(--fnd);
+  font-size: 14px;
+  height: 50px;
+  width: 160px;
+  transition: 0.5s;
+}
+
+/* Cambiando el diseño de los linsk e items */
+.Nav-Content .Nav li a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}

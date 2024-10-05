@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./nav.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Portfolio - Proyectos</title>
+</head>
+<body>
+  <main>
+    <nav id="nav" class="Nav-Content">
+      <ul class="Nav">
+
+        <li class="active">
+          <a href="/index.html">Inicio</a>
+        </li>
+        <!-- <li class="li-none-style">
+          Modo oscuro
+          <div class="dark" onClick={props.onClick}></div>
+        </li> -->
+      </ul>
+    </nav>
+  
+    <section id="projects" class="section container-services">
+      <!-- <h1>Proyectos</h1> -->
+      <div class="card-v">
+        <div class="card-v-main">
+
+          <div class="card-v-content">
+            <h3 class="card-v-title">
+              Análisis numérico app
+            </h3>
+            <lu class="tools">
+              <li>
+                <img class="" src="./imgs/Projects/tools/react.png" alt="">
+              </li>
+              <li>
+                <img class="" src="./imgs/Projects/tools/bootstrap.svg" alt="">
+              </li>
+            </lu>
+            <p class="card-v-text">
+              Facilita el uso del método bisección mostrando cada iteración en una 
+              lista y el resultado del calculo realizado en base a los datos iniciales que el usuario 
+              quiere recibir, estos datos serian, un porcentaje aproximado al que quiere llegar y 2 
+              intervalos, 1 superior y 1 inferior.
+            </p>
+
+          </div>
+
+          <div class="card-v-btn">
+            <a class="btn-anchor" href="https://analisis-numerico-app.vercel.app/">Pagina web</a>
+            <a class="btn-git" href="https://github.com/Andres-021/analisis_numerico_app">Github</a>
+          </div>
+
+        </div>
+
+        <div class="images">
+          <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="">
+        </div>
+      </div>
+      
+      <div class="card-v">
+        <div class="card-v-content">
+          <h3 class="card-v-title">
+            Calculadora de resistencia
+          </h3>
+          <lu class="tools">
+            <li>
+              <img class="" src="./imgs/Projects/tools/react.png" alt="">
+            </li>
+            <li>
+              <img class="" src="./imgs/Projects/tools/css3.png" alt="">
+            </li>
+          </lu>
+          <p class="card-v-text">
+            Facilita el calculo para hallar el valor de la resistencia de una forma mas rápida
+            automatizando el proceso con solo seleccionar los valores en los campos requeridos.
+          </p>
+          <a class="btn-anchor" href="https://calculadora-resistencia.vercel.app/">Pagina web</a>
+          <a class="btn-git" href="https://github.com/Andres-021/calculadora-resistencia">Github</a>
+        </div>
+        <div class="images">
+          <img class="" src="./imgs/Projects/calculador-resistencia.png" alt="">
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
