@@ -296,13 +296,6 @@ h1{
   margin-bottom: 10px;
 }
 
-.aptitudes ul {
-  display: flex;
-  flex-wrap: wrap;
-  /* gap: 10px; */
-  list-style-type: disc;
-  /* padding-left: 20px; */
-}
 
 .aptitudes ul li {
   margin-bottom: 5px;
@@ -392,13 +385,14 @@ h1{
 .container-services {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 40px;
   /* height: auto; */
   align-items: center;
   box-sizing: border-box;
   background-color: #0F1035;
   overflow-x: auto;
+  scroll-snap-type: x mandatory; /* Hace que las cartas "encajen" al deslizar */
   /* background-color: transparent; */
 }
 
@@ -458,6 +452,9 @@ h1{
   background: rgba(127, 199, 217, 0.3);
   /* color: #000000; */
   color: #dbdbdb;
+
+  scroll-snap-align: center; /* Alinea cada carta al centro del contenedor */
+  flex-shrink: 0; /* Evita que las cartas se reduzcan */
 
   box-shadow: rgba(11, 150, 230, 0.6) 0px 1px 4px;
   /* background-color: #161616; */
