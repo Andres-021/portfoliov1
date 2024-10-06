@@ -13,7 +13,7 @@
 
 
 /* Mobile menu */ 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 330px) and (max-width: 768px) {
 
   .Nav-Content{
     display: none;
@@ -55,7 +55,47 @@
 
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+
+  .Nav-Content{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    /* Color */
+    background: var(--fnd);
+
+    color: var(--color);
+    /* Posicionamiento y fijado */
+    position: fixed;
+    z-index: 999;
+    /* Centrado y flote */
+    top: 0;
+
+    height: 60px;
+    width: 100%;
+  }
+  
+  .Nav-Content .Nav {
+    display: none;
+    list-style: none;
+    overflow: hidden; /* Limpiamos errores de float */
+  }
+  
+  .Nav-Content .Nav li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  .Nav-Content .Nav li a {
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1440px) {
   /* Estilos para laptops pequeñas o monitores pequeños */
   .Nav-Content {
     display: flex;
