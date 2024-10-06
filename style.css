@@ -497,6 +497,9 @@ h1{
   height: auto;
 }
 
+.container-services .card-v .card-v-main .card-v-content {
+  margin-bottom: 20px;
+}
 /* .card-v-content{
   gap: 10px;
 } */
@@ -515,9 +518,12 @@ h1{
   font-weight: bold;
 }
 
-.container-services .card-v .card-v-main .card-v-btn{
+.container-services .card-v .card-v-btn{
+  display: flex;
+  gap: 10px;
   position: absolute;
   bottom: 0;
+  margin-bottom: 20px;
 }
 
 /* FIN SERVICES */
