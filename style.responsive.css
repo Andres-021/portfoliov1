@@ -88,7 +88,7 @@
 
   .section{
     width: 100%;
-    padding: 0;
+    /* padding: 0; */
   }
 
   .about-me{
@@ -106,7 +106,7 @@
   .about-me .content1{
     width: 80%;
     height: 50%;
-    padding: 20px;
+    padding: 0px;
   }
 
   .about-me .content1  button {
@@ -138,27 +138,38 @@
   }
 /* APTITUDES */
   /* estilo principal */
-  .aptitudes {
-    background-color: #0F1035; /* Color de fondo para la sección de aptitudes */
+  /* .aptitudes {
+    background-color: #0F1035; Color de fondo para la sección de aptitudes
     box-sizing: border-box; 
-  }
+  } */
   
   .aptitudes h1 {
     color: #000; /* Texto en negrita */
     font-size: 22px;
     margin-bottom: 10px;
   }
+      /* estilo de las listas */
+  .aptitudes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    counter-reset: li; 
+    list-style: none; 
+    /* list-style: decimal;  */
+    /* font-size: 36px; */
+    font-weight: 600;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
   
   .aptitudes ul {
     display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* gap: 10px; */
     list-style-type: disc;
-    width: 100%;
-    /* height: 100%; */
+    margin: 0 0 0 0em; 
+    /* width: 100%; */
   }
   
   .aptitudes ul li {
@@ -174,25 +185,6 @@
   .aptitudes ul li a:hover {
     text-decoration: underline;
   }
-    /* fin estilo principal */
-    
-    /* estilo de las listas */
-  .aptitudes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    counter-reset: li; 
-    list-style: none; 
-    list-style: decimal; 
-    /* font-size: 36px; */
-    font-weight: 600;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
-  }
-  
-  .aptitudes ul {
-    margin: 0 0 0 2em; 
-  }
   
   .aptitudes li{
     width: 30%;
@@ -201,7 +193,7 @@
     display: block;
     /* padding: .8em .8em .8em .16em; */
     padding: 2em;
-    margin: .5em 0 .5em 3.5em;
+    margin: .5em 0 .5em 2.5em;
     /* background: #ddd; */
     font-size: 45px;
     color: #ffffff;
