@@ -24,7 +24,7 @@ body{
 
 @font-face {
   font-family: 'roboto';
-  src: url('fonts/roboto/Roboto-Black.ttf') format('truetype');
+  src: url('fonts/roboto/Roboto-Medium.ttf') format('truetype');
   font-style: normal;
 }
 /* 
