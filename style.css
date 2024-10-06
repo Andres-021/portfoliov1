@@ -444,18 +444,16 @@ h1{
 
 .container-services .card-v {
   display: flex;
+  position: relative;
   width: 250px;
   /* height: auto; */
   height: 400px;
   flex-direction: column;
-  gap: 10px;
+  /* gap: 10px; */
   padding: 20px;
   justify-content: center;
   align-items: start;
   text-align: start;
-
-  /* width: auto; */
-  
   font-size: 14px;
   font-weight: bold;
   background: rgba(127, 199, 217, 0.3);
@@ -479,6 +477,7 @@ h1{
 .container-services .card-v .images {
   width: 100%;
   height: 100%;
+  /* margin-bottom: 150px; */
 }
 
 
@@ -486,7 +485,7 @@ h1{
   width: 100%;
   height: 100%;
   max-width: 500px;
-  border-radius: 2.5px;
+  border-radius: 15px;
   object-fit: contain;
 }
 
@@ -498,7 +497,7 @@ h1{
 }
 
 .container-services .card-v .card-v-main .card-v-content {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 /* .card-v-content{
   gap: 10px;
@@ -512,7 +511,7 @@ h1{
 }
 
 .card-v-text {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   grid-area: card-v-texto;
   font-size: 14px;
   font-weight: bold;
@@ -520,8 +519,9 @@ h1{
 
 .container-services .card-v .card-v-btn{
   display: flex;
-  gap: 10px;
   position: absolute;
+  z-index: 1;
+  gap: 10px;
   bottom: 0;
   margin-bottom: 20px;
 }
