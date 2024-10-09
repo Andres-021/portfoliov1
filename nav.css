@@ -14,6 +14,20 @@
 
 /* Mobile menu */ 
 @media screen and (min-width: 330px) and (max-width: 768px) {
+  #section-title{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    z-index: 10;
+  }
+
+  #section-title h3{
+    color: white;
+    font-size: 70px;
+  }
+
 
   .Nav-Content{
     display: none;
@@ -57,6 +71,21 @@
 
 @media screen and (min-width: 769px) and (max-width: 1080px) {
 
+  /* Info section title */
+  #section-title{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    z-index: 10;
+  }
+
+  #section-title h3{
+    color: white;
+    font-size: 70px;
+  }
+
   .Nav-Content{
     display: none;
     align-items: center;
@@ -96,6 +125,9 @@
 }
 
 @media screen and (min-width: 1081px) and (max-width: 1440px) {
+  #section-title{
+    display: none;
+  }
   /* Estilos para laptops pequeñas o monitores pequeños */
   .Nav-Content {
     display: flex;

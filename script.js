@@ -2,6 +2,7 @@ const btnAbout = document.getElementById('btn-about');
 const item = document.getElementsByClassName("item");
 const navLinks = document.querySelectorAll('.item a');
 const sections = document.querySelectorAll('section');
+const sectionTitle = document.getElementById('section-title-h');
 
 
 // let title = document.querySelectorAll('title');
@@ -15,7 +16,7 @@ const sections = document.querySelectorAll('section');
     sections.forEach(section => {
       const sectionTop = section.getBoundingClientRect().top;
   
-      if (sectionTop <= 50 && sectionTop >= -130) {  // Ajusta el umbral según sea necesario
+      if (sectionTop <= 50 && sectionTop >= -120) {  // Ajusta el umbral según sea necesario
         currentSection = section.getAttribute('id'); // Capturamos el id de la sección en vista
         // Aquí usamos scrollIntoView para centrar la sección en vista
         section.scrollIntoView({
@@ -30,6 +31,7 @@ const sections = document.querySelectorAll('section');
       const sectionId = link.getAttribute('href').substring(1);
       
       this.document.title = `Portfolio - ${currentSection.charAt(0).toUpperCase() + currentSection.slice(1)}`;
+      sectionTitle.textContent = `${currentSection.charAt(0).toUpperCase() + currentSection.slice(1)}`;
       
       if (sectionId === currentSection) {
         link.parentElement.classList.add('active');
