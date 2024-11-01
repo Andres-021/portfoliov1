@@ -449,7 +449,7 @@ h1{
   /* height: auto; */
   height: 400px;
   flex-direction: column;
-  /* gap: 10px; */
+  gap: 10px;
   padding: 20px;
   justify-content: center;
   align-items: start;
@@ -520,11 +520,11 @@ h1{
 
 .container-services .card-v .card-v-btn{
   display: flex;
-  position: absolute;
-  z-index: 1;
+  /* position: absolute; */
+  /* z-index: 1; */
   gap: 10px;
-  bottom: 0;
-  margin-bottom: 20px;
+  /* bottom: 0; */
+  /* margin-bottom: 20px; */
 }
 
 /* FIN SERVICES */
