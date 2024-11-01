@@ -13,18 +13,18 @@ const sectionTitle = document.getElementById('section-title-h');
     let currentSection = '';
 
     // Revisamos cada sección y usamos getBoundingClientRect para ver si está en vista
-    sections.forEach(section => {
-      const sectionTop = section.getBoundingClientRect().top;
+    // sections.forEach(section => {
+    //   const sectionTop = section.getBoundingClientRect().top;
   
-      if (sectionTop <= 50 && sectionTop >= -120) {  // Ajusta el umbral según sea necesario
-        currentSection = section.getAttribute('id'); // Capturamos el id de la sección en vista
-        // Aquí usamos scrollIntoView para centrar la sección en vista
-        section.scrollIntoView({
-          behavior: 'smooth',
-          block: 'center',
-        });
-      }
-    });
+    //   if (sectionTop <= 50 && sectionTop >= -120) {  // Ajusta el umbral según sea necesario
+    //     currentSection = section.getAttribute('id'); // Capturamos el id de la sección en vista
+    //     // Aquí usamos scrollIntoView para centrar la sección en vista
+    //     section.scrollIntoView({
+    //       behavior: 'smooth',
+    //       block: 'center',
+    //     });
+    //   }
+    // });
   
     // Ahora recorremos los links y activamos el correspondiente
     navLinks.forEach(link => {
