@@ -134,6 +134,8 @@
     align-items: center;
     justify-content: center;
     /* Color */
+    background-color: #0F1035;
+
     /* background: var(--fnd); */
 
     color: var(--color);

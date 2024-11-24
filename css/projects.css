@@ -1,0 +1,172 @@
+
+/* SERVICES */
+/* .container-services  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #0F1035;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; /* Hace que las cartas "encajen" al deslizar
+} */
+.container-services{
+  position: relative;
+  /* justify-content: center; */
+  align-items: center;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #0F1035;
+  /* height: auto; */
+  overflow: hidden;
+  /* border-radius: 50% */
+  /* background: #fff; */
+  mask: linear-gradient(90deg, transparent, #fff 0%, #fff 100%, transparent);
+}
+
+
+.container-services .div-card-scroll:hover {
+  animation-play-state: paused;
+}
+
+.container-services .div-card-scroll{
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  /* overflow-x: auto; */
+  /* margin-bottom: 100px; */
+  animation: animate var(--t) linear infinite;
+  animation-delay: calc(var(--t) * -1);
+  padding: 40px 150px 40px 150px;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+.container-services .div-card-scroll  h1 {
+  color: rgb(0, 0, 0);
+  font-size: 2.5em;
+
+}
+
+/* .container-services .div-card-scroll  #more-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+
+}
+
+.container-services .div-card-scroll  #more-projects img{
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
+}
+
+.container-services .div-card-scroll  #more-projects:hover img{
+  width: 52px;
+  height: 52px;
+  transition: 0.5s;
+} */
+
+.container-services .div-card-scroll  .card-v {
+  display: flex;
+  position: relative;
+  width: 550px;
+  /* height: auto; */
+  height: auto;
+  flex-direction: column;
+  gap: 10px;
+  /* padding: 20px; */
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  font-size: 14px;
+  font-weight: bold;
+  background: rgba(127, 199, 217, 0.3);
+  /* color: #000000; */
+  color: #dbdbdb;
+
+  scroll-snap-align: center; /* Alinea cada carta al centro del contenedor */
+  flex-shrink: 0; /* Evita que las cartas se reduzcan */
+
+  /* box-shadow: rgba(11, 150, 230, 0.6) 0px 1px 4px; */
+  box-shadow: rgba(0, 0, 0, .8) 0px 0px 10px;
+  /* background-color: #161616; */
+  /* box-shadow: rgba(127, 199, 217) 0px 1px 4px; */
+  /* box-shadow: rgb(31, 31, 31) 0px 2px 8px 0px; */
+  border-radius: 5px;
+  /* padding: 10px; */
+  transition: width 0.5s, font-size 0.5s;
+}
+
+
+
+.container-services .div-card-scroll  .card-v .images {
+  width: 100%;
+  height: 100%;
+  /* margin-bottom: 150px; */
+}
+
+
+.container-services .div-card-scroll  .card-v .images img {
+  width: 100%;
+  height: 100%;
+  /* max-width: 500px; */
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.container-services .div-card-scroll  .card-v .card-v-main {
+  position: relative;
+  /* text-wrap: balance; */
+  width: 100%;
+  height: auto;
+}
+
+.container-services .div-card-scroll  .card-v .card-v-main .card-v-content {
+  /* margin-bottom: 20px; */
+}
+/* .card-v-content{
+  gap: 10px;
+} */
+
+.card-v-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.card-v-text {
+  /* margin-bottom: 50px; */
+  grid-area: card-v-texto;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.container-services .div-card-scroll  .card-v .card-v-btn{
+  display: flex;
+  /* position: absolute; */
+  /* z-index: 1; */
+  gap: 10px;
+  /* bottom: 0; */
+  /* margin-bottom: 20px; */
+}
+
+/* FIN SERVICES */
