@@ -26,7 +26,6 @@
   mask: linear-gradient(90deg, transparent, #fff 0%, #fff 100%, transparent);
 }
 
-
 .container-services .div-card-scroll:hover {
   animation-play-state: paused;
 }
@@ -34,7 +33,7 @@
 .container-services .div-card-scroll{
   display: flex;
   width: 100%;
-  gap: 10px;
+  gap: 20px;
   /* overflow-x: auto; */
   /* margin-bottom: 100px; */
   animation: animate var(--t) linear infinite;
@@ -83,15 +82,13 @@
   transition: 0.5s;
 } */
 
-.container-services .div-card-scroll  .card-v {
+.container-services .div-card-scroll .card-v {
   display: flex;
   position: relative;
   width: 550px;
   /* height: auto; */
   height: auto;
   flex-direction: column;
-  gap: 10px;
-  /* padding: 20px; */
   justify-content: center;
   align-items: start;
   text-align: start;
@@ -106,15 +103,15 @@
 
   /* box-shadow: rgba(11, 150, 230, 0.6) 0px 1px 4px; */
   box-shadow: rgba(0, 0, 0, .8) 0px 0px 10px;
-  /* background-color: #161616; */
-  /* box-shadow: rgba(127, 199, 217) 0px 1px 4px; */
-  /* box-shadow: rgb(31, 31, 31) 0px 2px 8px 0px; */
   border-radius: 5px;
   /* padding: 10px; */
   transition: width 0.5s, font-size 0.5s;
 }
 
+.container-services .div-card-scroll .card-v:hover {
+  box-shadow: rgba(11, 150, 230, 0.6) 0px 1px 4px;
 
+}
 
 .container-services .div-card-scroll  .card-v .images {
   width: 100%;
