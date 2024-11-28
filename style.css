@@ -176,7 +176,7 @@ h1{
 }
 
 .btn-social{
-  border-radius: 5px;
+  border-radius: 10px;
   /* border-style: none; */
   text-decoration: none;
   background-color: var(--color);
