@@ -117,3 +117,20 @@
 
 
 /* FIN ABOUT */
+
+@media (max-width: 1080px) {
+  .about-me .content2 #btns-social-networks{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 70px;
+  }
+  
+  .about-me .content2 #btns-social-networks a {
+    /* width: 100%; */
+    width:70px;
+    height:70px;
+  }
+
+}
