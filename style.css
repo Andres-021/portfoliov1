@@ -52,6 +52,7 @@ p{
 /* } */
 
 
+
 .active{
   color: var(--btn);
   border-top: 2px solid var(--btn);
@@ -172,6 +173,21 @@ h1{
     cursor: pointer;
     transition: background-color .3s;
   }
+}
+
+.btn-social{
+  border-radius: 5px;
+  /* border-style: none; */
+  text-decoration: none;
+  background-color: var(--color);
+  box-shadow: rgba(0, 0, 0, .8) 0 0 10px;
+}
+.btn-social:hover{
+  background-color: #414141;
+  box-shadow: rgba(11, 150, 230, 0.6) 0px 1px 4px ;
+
+  cursor: pointer;
+  transition: background-color .3s;
 }
 
 .name{
