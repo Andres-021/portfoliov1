@@ -36,10 +36,9 @@ h1{
   font-weight: bolder;
 } */
 
-#proyectos {
-  --t: 20s; /* Definido específicamente para esta sección */
+/* #proyectos {
+  --t: 20s; 
 }
-
 
 #evSbLmiHTRJ1{
   position: fixed;
@@ -48,8 +47,9 @@ h1{
 
 p{
   /* font-weight: 100; */
-  font-size: 18px;
-}
+  /* font-size: 18px; */
+
+/* } */
 
 
 .active{

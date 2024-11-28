@@ -53,7 +53,7 @@
     font-weight: bold; /* Resalta el texto */
   }
   
-/* Responsive para pantallas de tabletas (entre 600px y 1024px) */
+/* Responsive para pantallas de tabletas (entre 600px y 1080px) */
 @media (max-width: 1080px) {
   .aptitudes ul {
     display: flex;
@@ -62,7 +62,7 @@
     height: auto;
     padding: 0;
     margin: 0;
-    gap: 20px; /* Espaciado entre elementos */
+    gap: 60px;
   }
 
   .aptitudes ul li {
@@ -78,4 +78,3 @@
   }
 }
 
-/* Responsive para pantallas móviles (menos de 600px) */
