@@ -144,6 +144,7 @@ h1{
     color: var(--btn);
     /* border-top: 2px solid var(--btn);
     border-bottom: 2px solid var(--btn); */
+    box-shadow: rgba(11, 150, 230, 0.6) 0px 1px 4px ;
     background-color: transparent;
     cursor: pointer;
     /* transition: background-color .3s; */
@@ -166,6 +167,8 @@ h1{
   border-bottom: 2px solid transparent;
   &&:hover{
     background-color: #414141;
+    box-shadow: rgba(11, 150, 230, 0.6) 0px 1px 4px ;
+
     cursor: pointer;
     transition: background-color .3s;
   }

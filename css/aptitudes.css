@@ -1,6 +1,9 @@
 /* APTITUDES */
   /* estilo principal */
   .aptitudes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #0F1035; /* Color de fondo para la sección de aptitudes */
     box-sizing: border-box; 
   }
@@ -13,95 +16,66 @@
   
   .aptitudes ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    /* gap: 10px; */
-    list-style-type: disc;
-    width: 100%;
-    /* height: 100%; */
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente fila */
+    list-style: none; /* Elimina los puntos de lista predeterminados */
+    height:100px;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Espaciado entre elementos */
   }
   
   .aptitudes ul li {
-    margin-bottom: 5px;
-    font-size: 16px;
-  }
-  
-  .aptitudes ul li a {
-    color: #0B97E6; /* Color del enlace similar al mostrado */
-    text-decoration: none;
-  }
-  
-  .aptitudes ul li a:hover {
-    text-decoration: underline;
-  }
-    /* fin estilo principal */
-    
-    /* estilo de las listas */
-  .aptitudes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    counter-reset: li; 
-    list-style: none; 
-    list-style: decimal; 
-    font-size: 36px;
-    font-weight: 600;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
-  }
-  
-  .aptitudes ul {
-    margin: 0 0 0 2em; 
-  }
-  
-  .aptitudes li{
-    width: 30%;
-    /* font-size: 50px; Tamaño del texto del li */
-    position: relative;
-    display: block;
-    /* padding: .8em .8em .8em .16em; */
-    padding: 2em;
-    margin: .5em 0 .5em 3.5em;
-    /* background: #ddd; */
+    display: flex; /* Alinea imagen y texto en una fila */
+    align-items: center; /* Centra verticalmente el contenido */
+    flex: 1 1 calc(33.333% - 20px); /* Tres elementos por fila, ajustable */
+    box-sizing: border-box; /* Incluye padding y bordes en el tamaño */
     color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: all .3s ease-out;   
   }
   
-  /* .aptitudes li:hover{
-    background: #eee;
-  }    */
-  
-  .aptitudes li:before{
-    content: counter(li);
-    counter-increment: li;
-    position: absolute; 
-    left: -3.5em;
-    top: 50%;
-    margin-top: -1.5em;
-    background: var(--btn);
-    height: 3em;
-    width: 3em;
-    line-height: 3em;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 5px;
+  .aptitudes ul li img {
+    width: 60px; /* Tamaño fijo de la imagen */
+    height: 60px;
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+    object-fit: contain; /* Asegura proporciones correctas de la imagen */
+    filter: drop-shadow(
+      0 0 10px rgba(0, 0, 0, .8)
+    );
+  }
+
+  .aptitudes ul li img:hover {
+    filter: drop-shadow(
+      0px 1px 4px rgba(11, 150, 230, 0.6)
+    );
   }
   
-  .aptitudes li:after{
-    position: absolute; 
-    content: '';
-    border: .5em solid transparent;
-    /* left: -1em; */
-    top: 50%;
-    margin-top: -.5em;
-    transition: all .3s ease-out;               
+  .aptitudes ul li span {
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Resalta el texto */
   }
   
-  .aptitudes li:hover:after{
-    left: -.5em;
-    border-left-color: var(--btn);             
+/* Responsive para pantallas de tabletas (entre 600px y 1024px) */
+@media (max-width: 1080px) {
+  .aptitudes ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none; /* Elimina los puntos de lista predeterminados */
+    height: auto;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Espaciado entre elementos */
   }
-  /* FIN APTITUDES */
+
+  .aptitudes ul li {
+    font-size: 45px; /* Ajustar tamaño de fuente */
+  }
+
+  .aptitudes ul li img {
+    width: 130px; /* Ajustar tamaño de la imagen */
+    height: 130px;
+  }
+
+  .aptitudes ul li span {
+  }
+}
+
+/* Responsive para pantallas móviles (menos de 600px) */
