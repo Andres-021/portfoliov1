@@ -1,5 +1,3 @@
-const btnAbout = document.getElementById('btn-about');
-const item = document.getElementsByClassName("item");
 const navLinks = document.querySelectorAll('.item a');
 const sections = document.querySelectorAll('section');
 const sectionTitle = document.getElementById('section-title-h');
@@ -9,39 +7,39 @@ const sectionTitle = document.getElementById('section-title-h');
 
 
 // document.addEventListener("DOMContentLoaded", function() {
-  window.addEventListener("scroll", function() {
-    let currentSection = '';
+  // window.addEventListener("scroll", function() {
+  //   let currentSection = '';
 
-    // Revisamos cada sección y usamos getBoundingClientRect para ver si está en vista
-    // sections.forEach(section => {
-    //   const sectionTop = section.getBoundingClientRect().top;
+  //   // Revisamos cada sección y usamos getBoundingClientRect para ver si está en vista
+  //   // sections.forEach(section => {
+  //   //   const sectionTop = section.getBoundingClientRect().top;
   
-    //   if (sectionTop <= 50 && sectionTop >= -120) {  // Ajusta el umbral según sea necesario
-    //     currentSection = section.getAttribute('id'); // Capturamos el id de la sección en vista
-    //     // Aquí usamos scrollIntoView para centrar la sección en vista
-    //     section.scrollIntoView({
-    //       behavior: 'smooth',
-    //       block: 'center',
-    //     });
-    //   }
-    // });
+  //   //   if (sectionTop <= 50 && sectionTop >= -120) {  // Ajusta el umbral según sea necesario
+  //   //     currentSection = section.getAttribute('id'); // Capturamos el id de la sección en vista
+  //   //     // Aquí usamos scrollIntoView para centrar la sección en vista
+  //   //     section.scrollIntoView({
+  //   //       behavior: 'smooth',
+  //   //       block: 'center',
+  //   //     });
+  //   //   }
+  //   // });
   
-    // Ahora recorremos los links y activamos el correspondiente
-    navLinks.forEach(link => {
-      const sectionId = link.getAttribute('href').substring(1);
+  //   // Ahora recorremos los links y activamos el correspondiente
+  //   navLinks.forEach(link => {
+  //     const sectionId = link.getAttribute('href').substring(1);
       
-      this.document.title = `Portfolio - ${currentSection.charAt(0).toUpperCase() + currentSection.slice(1)}`;
-      sectionTitle.textContent = `${currentSection.charAt(0).toUpperCase() + currentSection.slice(1)}`;
+  //     this.document.title = `Portfolio - ${currentSection.charAt(0).toUpperCase() + currentSection.slice(1)}`;
+  //     sectionTitle.textContent = `${currentSection.charAt(0).toUpperCase() + currentSection.slice(1)}`;
       
-      if (sectionId === currentSection) {
-        link.parentElement.classList.add('active');
+  //     if (sectionId === currentSection) {
+  //       link.parentElement.classList.add('active');
         
-      } else {
-        link.parentElement.classList.remove('active');
+  //     } else {
+  //       link.parentElement.classList.remove('active');
         
-      }
-    });
-  });
+  //     }
+  //   });
+  // });
 // });
 
 const observer = new IntersectionObserver((entries) => {
@@ -83,45 +81,57 @@ function smoothScrollTo(element, duration) {
 // hiddenElements.forEach((el) => observer.observe(el))
 
 const transitionScroll = (sectionId) => {
-  const section = document.getElementById(sectionId)
-  var scrollY = window.scrollY;
-  var destinationOffset = section.offsetTop;
-  var duration = 500; // duración en milisegundos
-  var startingTime = performance.now();
-  
+  const section = document.getElementById(sectionId);
+  if (!section) {
+    console.error(`Section with ID '${sectionId}' not found.`);
+    return;
+  }
+
+  const scrollY = window.scrollY;
+  const destinationOffset = section.offsetTop;
+  const duration = 500; // duración en milisegundos
+  const startingTime = performance.now();
+
   function scrollStep(timestamp) {
-    var progress = timestamp - startingTime;
-    var percentage = Math.min(progress / duration, 1);
-    var currentOffset = scrollY + (destinationOffset - scrollY) * percentage;
+    const progress = timestamp - startingTime;
+    const percentage = Math.min(progress / duration, 1);
+    const currentOffset = scrollY + (destinationOffset - scrollY) * percentage;
+
     window.scrollTo(0, currentOffset);
+
     if (percentage < 1) {
       window.requestAnimationFrame(scrollStep);
     }
   }
 
-  window.requestAnimationFrame(scrollStep);
-}
+  // Usa un pequeño retraso para que los cambios de DOM se procesen primero
+  setTimeout(() => {
+    window.requestAnimationFrame(scrollStep);
+  }, 0);
+};
 
-
-// Se
-document.querySelectorAll('.item a').forEach( a =>{
-  a.addEventListener('click', (e) => {
+// Seleccionamos todos los elementos con la clase 'item'
+const items = document.querySelectorAll('.item a');
+items.forEach(link => {
+  link.addEventListener('click', (e) => {
     e.preventDefault();
 
-    const parentLi = e.target.parentElement;
-    
-    for (let i = 0; i < item.length; i++) {
-      item[i].classList.remove('active');
-    }
+    // Obtener la sección actual del enlace clicado
+    const currentSection = link.getAttribute('href').replace('#', '');
 
-    // Luego, agregamos la clase 'active' al elemento actual
+    // Obtenemos el <li> padre del <a> clicado
+    const parentLi = link.parentElement;
+
+    // Eliminamos la clase 'active' de todos los <li>
+    document.querySelectorAll('.item').forEach(item => item.classList.remove('active'));
+
+    // Agregamos la clase 'active' al <li> correspondiente
     parentLi.classList.add('active');
+
+    transitionScroll(currentSection);
   });
 });
 
-btnAbout.addEventListener('click',() => {
-  transitionScroll('Proyectos')
-})
 
 // function scrollByPixels(scrollAmount) {
 //   window.scrollBy({
