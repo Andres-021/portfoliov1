@@ -80,8 +80,9 @@
 @media (max-width: 480px) {/* Ajusta el ancho según tus necesidades */
 
   .section{
-    /* padding: 0; */
-    padding: 20px 90px 20px 90px;
+    /* width: 100%; */
+    padding: 0;
+    /* padding: 20px 90px 20px 90px; */
 
   }
 
@@ -95,7 +96,8 @@
 
   
   .scroll .images {
-    flex-basis: 40%; /* Permite que ocupen todo el ancho disponible */
+    /* padding: 20px 90px 20px 90px; */
+    flex-basis: 20%; /* Permite que ocupen todo el ancho disponible */
     min-width: 15%; /* Asegura que cada imagen ocupe el 100% del ancho */
     min-height: 15%; /* Ajusta la altura automáticamente */
   }
