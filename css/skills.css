@@ -57,7 +57,7 @@
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 1080px) { /* Ajusta el ancho según tus necesidades */
+@media (max-width: 1080px) { /* Ajusta el ancho según tus necesidades */
   .scroll {
     flex-direction: row; /* Cambia a disposición vertical */
     justify-content: center;
@@ -66,6 +66,34 @@
     overflow-x: auto;
   }
 
+  .scroll .images {
+    flex-basis: 40%; /* Permite que ocupen todo el ancho disponible */
+    min-width: 15%; /* Asegura que cada imagen ocupe el 100% del ancho */
+    min-height: 15%; /* Ajusta la altura automáticamente */
+  }
+
+  .scroll .images img {
+    height: 100%; /* Mantiene la proporción de la imagen */
+  }
+}
+
+@media (max-width: 480px) {/* Ajusta el ancho según tus necesidades */
+
+  .section{
+    /* padding: 0; */
+    padding: 20px 90px 20px 90px;
+
+  }
+
+  .scroll {
+    flex-direction: row; /* Cambia a disposición vertical */
+    justify-content: center;
+    gap: 10px; /* Ajusta el espacio entre elementos */
+    align-content: flex-start; /* Alinea los elementos al inicio si hay espacio extra */
+    overflow-x: auto;
+  }
+
+  
   .scroll .images {
     flex-basis: 40%; /* Permite que ocupen todo el ancho disponible */
     min-width: 15%; /* Asegura que cada imagen ocupe el 100% del ancho */

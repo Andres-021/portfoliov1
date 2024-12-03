@@ -70,8 +70,30 @@
   }
 
   .aptitudes ul li img {
-    width: 130px; /* Ajustar tamaño de la imagen */
-    height: 130px;
+    width: 150px; /* Ajustar tamaño de la imagen */
+    height: 150px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .aptitudes ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none; /* Elimina los puntos de lista predeterminados */
+    height: auto;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+  }
+
+  .aptitudes ul li {
+    font-size: 15px; /* Ajustar tamaño de fuente */
+  }
+
+  .aptitudes ul li img {
+    width: 40px; /* Ajustar tamaño de la imagen */
+    height: 40px;
   }
 
 }

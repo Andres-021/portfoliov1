@@ -205,3 +205,40 @@
   }
   
 }
+
+
+@media (max-width: 480px) {
+
+  .container-services .div-card-scroll{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5px;
+    /* overflow-x: auto; */
+    margin-bottom: 0px;
+    animation: animate var(--t) linear infinite;
+    animation-delay: calc(var(--t) * -1);
+    padding: 0px 150px 5px 150px;
+  }
+  
+  .container-services .div-card-scroll .card-v {
+    display: flex;
+    position: relative;
+    /* width: 100%; */
+    height: 150px;
+    /* height: auto; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  
+    scroll-snap-align: center; /* Alinea cada carta al centro del contenedor */
+    flex-shrink: 0; /* Evita que las cartas se reduzcan */
+  
+    /* margin-right: 250px; */
+    box-shadow: rgba(0, 0, 0, .8) 0px 0px 10px;
+    border-radius: 5px;
+    /* padding: 10px; */
+    transition: width 0.5s, font-size 0.5s;
+  }
+  
+}

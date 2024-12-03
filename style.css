@@ -60,31 +60,7 @@ p{
 }
 
 
-.tools li{
-  display: inline-flex;
-  /* margin-bottom: 10px; */
-
-  /* Cuando se use anchor */
-  &&>a{
-    color: #ffffff;
-    
-    &&>svg{
-      width: auto;
-      height: 35px;
-    }
-
-    &&:hover{
-      padding: 1;
-      color: #0486b6;
-      transition: color .3s
-    }
-  };
-  /* Cuando no se use anchor */
-  &&>img{
-    width: auto;
-    max-height: 20px;
-  }
-}
+/*  */
 
 
 .hidden{
