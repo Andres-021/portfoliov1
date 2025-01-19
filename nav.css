@@ -5,7 +5,8 @@
   --fndRsp: white;
   --colorRsp: black;
   --padd: 250px;
-
+  /* --font-size-title: 50px; */
+  /* --font-size-text: 20px; */
   /* --btn: #365486; */
   --btn: #0B97E6;
   --btn-hover: #0F1035;
@@ -147,6 +148,7 @@
     left: 0;
 
     height: 100%;
+    width: 10%;
     margin-left: 0px;
 
   }

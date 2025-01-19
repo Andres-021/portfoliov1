@@ -12,13 +12,13 @@
   scroll-snap-type: x mandatory; /* Hace que las cartas "encajen" al deslizar
 } */
 .container-services{
-  position: relative;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  flex-direction: row;
+  width: 90%;
   box-sizing: border-box;
+  position: relative;
   background-color: #0F1035;
   /* height: auto; */
   overflow: hidden;
@@ -29,6 +29,41 @@
 
 .container-services .div-card-scroll:hover {
   animation-play-state: paused;
+}
+
+.div-card-desc-projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  padding: 10px;
+  height: 100%;
+  width: 50%;
+  background-color: #0F1035;
+  color: #ffffff;
+}
+
+.sombra {
+  position: absolute;
+  z-index: 10;
+  margin-left: 0;
+  top: 0;
+  width: 50%; /* Ajusta según necesites */
+  height: 100%;
+  background: linear-gradient(to right, #0F1035 10%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
+}
+
+.div-card-scroll-p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  /* position: absolute; */
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
 }
 
 .container-services .div-card-scroll{
@@ -171,6 +206,55 @@
 /* FIN SERVICES */
 /* Responsive para pantallas de tabletas (entre 600px y 1080px) */
 @media (max-width: 1080px) {
+
+  .container-services{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #0F1035;
+    /* height: auto; */
+    overflow: hidden;
+    /* border-radius: 50% */
+    /* background: #fff; */
+    mask: linear-gradient(90deg, transparent, #fff 0%, #fff 100%, transparent);
+  }
+  .div-card-desc-projects{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    /* position: absolute; */
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    /* background-color: transparent */
+    background: linear-gradient(#0F1035 10%, rgba(0, 0, 0, 0.2) 100%, transparent 50%);
+
+    color: #ffffff;
+  }
+  
+  .sombra {
+    display: none;
+  }
+  
+  .div-card-scroll-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 0; */
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
 
   .container-services .div-card-scroll{
     display: flex;

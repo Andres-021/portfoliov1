@@ -52,6 +52,34 @@ p{
 /* } */
 
 
+.title{
+  font-size: 50px;
+}
+
+.text{
+  color: #dbdbdb;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+
+.name{
+  font-size: 65px;
+  font-weight: bolder;
+  /* margin-top: 10px; */
+  /* margin-bottom: 20px; */
+}
+
+.min-desc{
+  font-size: 50px;
+  margin-bottom: 25px;
+  animation: fluid 5s ease-in-out infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .active{
   color: var(--btn);
@@ -91,9 +119,11 @@ h1{
 
 .section{
   /* padding: 250px; */
-  width: 100%;
+  width: 90%;
   height: 100vh;
-  padding: 40px 150px 40px 150px;
+  margin-left: auto;
+  padding: 10px;
+  /* padding: 40px 150px 40px 150px; */
   font-weight: 500;
   background-color: #0F1035;
 }
@@ -166,23 +196,6 @@ h1{
   transition: background-color .3s;
 }
 
-.name{
-  font-size: 65px;
-  font-weight: bolder;
-  /* margin-top: 10px; */
-  /* margin-bottom: 20px; */
-}
-
-.min-desc{
-  font-size: 55px;
-  margin-bottom: 25px;
-  animation: fluid 5s ease-in-out infinite;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 300%;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 @keyframes fluid {
     0% { background-position: 0 50% }

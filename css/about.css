@@ -8,15 +8,10 @@
   text-wrap: balance;
   box-sizing: border-box;
   background-color: #0F1035;
-  font-weight: 600;
+  /* font-weight: 600; */
 
 }
 
-.text{
-  color: #dbdbdb;
-  font-size: 15px;
-  margin-bottom: 30px;
-}
 
 .about-me .content1{
   width: 50%;
