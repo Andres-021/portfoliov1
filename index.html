@@ -26,16 +26,16 @@
             <a href="#sobre">Sobre mi</a>
           </li>
           <li class="item">
-            <a href="#aptitudes">Aptitudes</a>
+            <a href="#proyectos">Proyectos</a>
           </li>
           <li class="item">
-            <a href="#proyectos">Proyectos</a>
+            <a href="#aptitudes">Aptitudes</a>
           </li>
           <li class="item">
             <a href="#Habilidades">Habilidades</a>
           </li>
           <!-- <li class="li-none-style">
-            Modo oscuro
+            Modo oscuro 
             <div class="dark" onClick={props.onClick}></div>
           </li> -->
         </ul>
@@ -45,25 +45,16 @@
     <section id="sobre" class="section about-me">
       
       <div class="content1">
-        
-        <!-- <p className='h3-container-aboutme'>
-          Hola, soy
-        </p> -->
-        <!-- <h1 class="name">
-          ANDRES QUINTERO
-        </h1> -->
-        <h1 class="min-desc">Desarrollador Backend</h1>
-        <p class="text">
-          Enfocado en la transición de una idea del mundo real al mundo de la programación. 
-          Me gusta solucionar problemas complejos que se presentan en base a mi conocimiento 
-          o relacionado a ello. 
-          <!-- Soy una persona que se dedica al aprendizaje autodidacta realizando proyectos personales, freelance y cursos en línea para ampliar cada vez mis conocimientos. Además, estoy estudiando Ing. De sistemas realizando 8mo semestre. -->
-        </p>
+        <div class="min-desc">
+          <span class="pacific">Transformando ideas</span>
+          <span class="bold"> del mundo real</span>
+          <span class="bold"> al mundo digital</span>
+        </div>
 
         <div id="btns-anchor">
 
           <!-- <a class="btn-anchor" href="#projects">Ver mas</a> -->
-          <a class="btn-anchor" href="https://drive.google.com/file/d/14s4UJWn44_6tQ8UE_0KULIcMHSrikLss/view">CV</a>
+          <a class="btn-anchor" href="https://drive.google.com/file/d/14s4UJWn44_6tQ8UE_0KULIcMHSrikLss/view">Descargar CV</a>
           <!-- <a class="btn-anchor" href="/projects.html">
             Ver proyectos
             <img src="/imgs/About/enlace.svg" alt="Descripción del SVG" width="20" height="20">
@@ -88,48 +79,17 @@
       </div>
     </section>
 
-    <section id="aptitudes" class="section aptitudes">
-      <!-- <h1>Aptitudes</h1> -->
-      <ul>
-        <li>
-          <img src="/imgs/Aptitudes/leader.svg" alt="Icono de liderazgo" class="icon">
-          Liderazgo
-        </li>
-        <li>
-          <img src="/imgs/Aptitudes/learning.svg" alt="Icono de aprendizaje" class="icon">
-          Gran capacidad de aprendizaje
-        </li>
-        <li>
-          <img src="/imgs/Aptitudes/resolve.svg" alt="Icono de resolución de problemas" class="icon">
-          Resolución de problemas
-        </li>
-        <li>
-          <img src="/imgs/Aptitudes/dev.svg" alt="Icono de desarrollo en equipo" class="icon">
-          Desarrollo en equipo
-        </li>
-        <li>
-          <img src="/imgs/Aptitudes/adaptability.svg" alt="Icono de adaptabilidad" class="icon">
-          Adaptabilidad
-        </li>
-        <li>
-          <img src="/imgs/Aptitudes/analitic.svg" alt="Icono de pensamiento analítico" class="icon">
-          Pensamiento analítico
-        </li>
-      </ul>
-    </section>
-
-
     <section id="proyectos" class="section container-services">
 
       <div class="div-card-desc-projects">
 
-        <h1 class="title">Un vistazo a lo que hago</h1>
-        <p  class="text">
+        <span class="projects-desc"><strong class="pacific">Proyectos</strong> que demuestran mis capacidades</span>
+        <!-- <p  class="text">
           Proyectos que combinan creatividad, tecnología y funcionalidad. 
           Explora mis creaciones y descubre cómo las ideas cobran vida.
-          <!-- Soy una persona que se dedica al aprendizaje autodidacta realizando proyectos personales, freelance y cursos en línea para ampliar cada vez mis conocimientos. Además, estoy estudiando Ing. De sistemas realizando 8mo semestre. -->
-        </p>
-        <button class="btn-anchor">Ver proyectos</button>
+          Soy una persona que se dedica al aprendizaje autodidacta realizando proyectos personales, freelance y cursos en línea para ampliar cada vez mis conocimientos. Además, estoy estudiando Ing. De sistemas realizando 8mo semestre.
+        </p> -->
+        <a class="btn-anchor" href="/projects.html">Ver proyectos</a>
       </div>
 
       <div class="div-card-scroll-p">
@@ -387,10 +347,59 @@
     </section>
 
 
+    <section id="aptitudes" class="section aptitudes">
+      <!-- <h1>Aptitudes</h1> -->
+      <div class="div-card-desc-aptitudes">
 
-    <section id="Habilidades" class="section container-tools">
+        <div class="aptitudes-desc">
+          <span class="">Mis aptitudes mas destacadas para lograr</span>
+          <span class="pacific">mis objetivos</span>
+        </div>
+
+      </div>
+      <ul>
+        <li>
+          <img src="/imgs/Aptitudes/leader.svg" alt="Icono de liderazgo" class="icon">
+          Liderazgo
+        </li>
+        <li>
+          <img src="/imgs/Aptitudes/learning.svg" alt="Icono de aprendizaje" class="icon">
+          Gran capacidad de aprendizaje
+        </li>
+        <li>
+          <img src="/imgs/Aptitudes/resolve.svg" alt="Icono de resolución de problemas" class="icon">
+          Resolución de problemas
+        </li>
+        <li>
+          <img src="/imgs/Aptitudes/dev.svg" alt="Icono de desarrollo en equipo" class="icon">
+          Desarrollo en equipo
+        </li>
+        <li>
+          <img src="/imgs/Aptitudes/adaptability.svg" alt="Icono de adaptabilidad" class="icon">
+          Adaptabilidad
+        </li>
+        <li>
+          <img src="/imgs/Aptitudes/analitic.svg" alt="Icono de pensamiento analítico" class="icon">
+          Pensamiento analítico
+        </li>
+      </ul>
+    </section>
+
+
+    <section id="Habilidades" class="container-tools">
       <!-- <h1>Habilidades</h1> -->
+      <div class="div-card-desc-container-tools">
 
+        <span class="pacific">Herramientas</span>
+        <span class="thin">que me ayudan a cumplir cada</span>
+        <span class="pacific">meta</span>
+
+        <!-- <p  class="text">
+
+          Para lograr cada objetivo me enfoco en aprender herramientas que
+          me permitan alcanzarlo.
+        </p> -->
+      </div>
       <div class="scroll" style="--t:20s"> 
 
           <div class="images">
@@ -443,21 +452,21 @@
     </section>
 
 
-    <footer>
-        <!-- <div class="columns">
+    <!-- <footer>
+        <div class="columns">
           <h2>Redes sociales</h2>
           <div class="columns">
             <a href="https://www.facebook.com/andresfelipe.quinterobautista/">Facebook</a>
           </div>
-        </div> -->
+        </div>
 
       <h4>© Desarrollado por <a href="https://github.com/andres-021">Andres-021</a></h4>
 
-      <!-- <div class="columns">
+      <div class="columns">
         <h2>Contato</h2>
         <button>Generar codigo QR</button>
-      </div> -->
-    </footer>
+      </div>
+    </footer> -->
 
   <!-- </div> -->
   
