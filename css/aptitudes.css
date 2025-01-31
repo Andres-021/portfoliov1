@@ -2,26 +2,51 @@
   /* estilo principal */
   .aptitudes {
     display: flex;
+    /* flex-direction: column; */
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     background-color: #0F1035; /* Color de fondo para la sección de aptitudes */
     box-sizing: border-box; 
   }
   
-  .aptitudes h1 {
-    color: #000; /* Texto en negrita */
+  /* .aptitudes h1 {
+    color: #000;
     font-size: 22px;
     margin-bottom: 10px;
+  } */
+
+  .div-card-desc-aptitudes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    padding: 10px;
+    height: 10%;
+    width: 50%;
+    background-color: #0F1035;
+    color: #ffffff;
+  }
+
+  .aptitudes-desc {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    gap: 5px;
   }
   
   .aptitudes ul {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente fila */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     list-style: none; /* Elimina los puntos de lista predeterminados */
-    height:100px;
+    height: auto;
     padding: 0;
     margin: 0;
-    gap: 20px; /* Espaciado entre elementos */
+    gap: 20px;
+    width: 50%;
   }
   
   .aptitudes ul li {
@@ -55,14 +80,47 @@
   
 /* Responsive para pantallas de tabletas (entre 600px y 1080px) */
 @media (max-width: 1080px) {
+  
+  .aptitudes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 10px; */
+    background-color: #0F1035; /* Color de fondo para la sección de aptitudes */
+    box-sizing: border-box; 
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .div-card-desc-aptitudes{
+    display: flex;
+    width: 100%;
+    background-color: #0F1035;
+    color: #ffffff;
+  }
+
+  .aptitudes-desc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    font-size: 80px;
+  }
+  
+  
   .aptitudes ul {
     display: flex;
     flex-direction: column;
-    list-style: none; /* Elimina los puntos de lista predeterminados */
     height: auto;
+    width: 100%;
     padding: 0;
     margin: 0;
     gap: 60px;
+    
+    overflow-x: scroll;
+    scroll-snap-align: start;
   }
 
   .aptitudes ul li {

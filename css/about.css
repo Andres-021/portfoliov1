@@ -15,22 +15,34 @@
 
 .about-me .content1{
   width: 50%;
-  /* border-top: 2px solid #333; */
   padding: 10px;
-  /* background-color: #000000bb; */
-
-  /* background: #00000081; */
 }
 
 .about-me #btns-anchor{
   display: flex;
+  /* justify-content: space-between; */
+  position: relative;
+  /* border-top: 1px solid #3498db; Grosor, estilo y color del borde */
+  padding-top: 10px;
   gap: 10px;
 }
 
+.about-me #btns-anchor::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  width: 100%;
+  height: 4px; /* Grosor del borde */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+}
 
 .about-me .content2{
   margin: 0 auto;
-  width: 50%;
+  width: 45%;
   height: 100%;
   
 }
@@ -115,20 +127,35 @@
 
 @media (max-width: 1080px) {
    /* Estilos para la mayoría de smartphones */
-  .min-desc{
-    font-size: 130px;
-    margin-bottom: 25px;
+  .min-desc {
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 40px;
     animation: fluid 5s ease-in-out infinite;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 300%;
     -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* font-family: "Poppins", sans-serif; */
+    gap: 5px;
+  }
+
+  .about-me #btns-anchor{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* border-top: 1px solid #3498db; Grosor, estilo y color del borde */
+    padding-top: 10px;
+    gap: 10px;
   }
 
   .btn-anchor{
     display: inline-flex;
     justify-content: center;
+
     /* height: fit-content; */
     /* width: fit-content; */
     border-style: none;

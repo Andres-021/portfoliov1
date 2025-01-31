@@ -44,6 +44,12 @@
   color: #ffffff;
 }
 
+.projects-desc{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
 .sombra {
   position: absolute;
   z-index: 10;
@@ -238,6 +244,13 @@
     background: linear-gradient(#0F1035 10%, rgba(0, 0, 0, 0.2) 100%, transparent 50%);
 
     color: #ffffff;
+  }
+
+  .projects-desc{
+    text-align: center;
+    font-size: 80px;
+    width: 100%;
+    margin-bottom: 60px;
   }
   
   .sombra {
