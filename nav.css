@@ -88,33 +88,33 @@
   }
 
   .Nav-Content{
-    display: none;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     /* Color */
-    background: var(--fnd);
-
     color: var(--color);
     /* Posicionamiento y fijado */
     position: fixed;
     z-index: 999;
     /* Centrado y flote */
     top: 0;
-
-    height: 60px;
+    left: 0;
+    height: 80px;
     width: 100%;
   }
   
   .Nav-Content .Nav {
-    display: none;
+    display: flex;
     list-style: none;
     overflow: hidden; /* Limpiamos errores de float */
+    position: fixed;
   }
   
   .Nav-Content .Nav li {
     float: left;
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 40px;
   }
   
   .Nav-Content .Nav li a {
