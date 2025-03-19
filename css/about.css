@@ -56,13 +56,13 @@
 
 
 .about-me .content2 #profile{
-  width: 100%;
+  width: 90%;
   mask-image: linear-gradient(
     black 80%,
     transparent
   );
   filter: drop-shadow(
-    0 0 10px rgba(0, 0, 0, .8)
+    0 0 20px rgba(0, 0, 0, .5)
   );
 }
 
@@ -76,6 +76,19 @@
   z-index: -1;
 }
 
+.about-me .content2 .development{
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: -1px -1px 4px rgba(255, 255, 255, 0.747);
+  text-align: center;
+  /* margin-top: 5px; */
+  padding: 0px 0 10px 0px;
+  margin: 0;
+
+  letter-spacing: 1px;
+}
 
 .about-me .content2 #btns-social-networks{
   display: flex;

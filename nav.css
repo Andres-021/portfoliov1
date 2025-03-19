@@ -123,6 +123,7 @@
     padding: 20px;
     color: #fff;
     text-decoration: none;
+    
   }
 }
 
@@ -231,7 +232,9 @@
     border-bottom: 2px solid #0F1035;
 
     font-size: 18px;
-    font-weight: bold;
+    /* font-weight: bold; */
+    /* font-weight: 600; */
+    /* letter-spacing: 0.5px; */
     
     transition: 0.5s;
   }
@@ -280,5 +283,7 @@
     text-decoration: none;
     cursor: pointer;
     color: inherit;
+    /* font-size: 40px; */
+    /* font-weight: 600; */
   }
 }
