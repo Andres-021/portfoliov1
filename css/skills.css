@@ -3,15 +3,15 @@
 
 .container-tools{
   display: flex;
-  flex-wrap: wrap;
-  /* flex-direction: column; */
-  width: 90%;
-  /* height: 100%; */
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 100vh;
   margin-left: 10%;
   /* margin-left: 0; */
   justify-content: center;
   align-items: center;
-  /* gap: 40px; */
+  overflow: hidden;
   background: #0F1035;
   box-sizing: border-box;
 }
@@ -23,11 +23,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* position: absolute; */
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding: 10px;
-  height: 50%;
   width: 60%;
   background-color: #0F1035;
   color: #ffffff;
@@ -38,7 +35,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 5px;
+  width: 100%;
   /* padding: 10px; */
   /* height: 100%; */
   /* overflow: hidden; */
@@ -47,9 +45,9 @@
 
 .scroll .images{
   position: relative;
-  flex-basis: calc(15% - 1rem);
-  min-width: calc(15% - 1rem);
-  min-height: 15%;
+  flex-basis: calc(12% - 1rem);
+  min-width: calc(12% - 1rem);
+  min-height: 12%;
   box-sizing: border-box;
   text-align: center;
 }
@@ -75,34 +73,21 @@
   .container-tools{
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
     width: 100%;
-    /* height: 100%; */
     margin-left: 0;
-    /* margin-left: 0; */
     justify-content: center;
     align-items: center;
-    /* gap: 40px; */
     background: #0F1035;
     box-sizing: border-box;
   }
 
   .div-card-desc-container-tools{
-    margin-bottom: 60px;
     padding: 10px;
-    height: 50%;
     width: 100%;
     background-color: #0F1035;
     color: #ffffff;
   }
 
-  .scroll {
-    flex-direction: row; /* Cambia a disposición vertical */
-    justify-content: center;
-    gap: 10px; /* Ajusta el espacio entre elementos */
-    align-content: flex-start; /* Alinea los elementos al inicio si hay espacio extra */
-    overflow-x: auto;
-  }
 
   .scroll .images {
     flex-basis: 40%; /* Permite que ocupen todo el ancho disponible */
@@ -117,6 +102,13 @@
 
 @media (max-width: 480px) {/* Ajusta el ancho según tus necesidades */
 
+  
+  .div-card-desc-container-tools{
+    padding: 10px;
+    background-color: #0F1035;
+    color: #ffffff;
+  }
+
   .section{
     /* width: 100%; */
     padding: 0;
@@ -124,20 +116,11 @@
 
   }
 
-  .scroll {
-    flex-direction: row; /* Cambia a disposición vertical */
-    justify-content: center;
-    gap: 10px; /* Ajusta el espacio entre elementos */
-    align-content: flex-start; /* Alinea los elementos al inicio si hay espacio extra */
-    overflow-x: auto;
-  }
-
-  
   .scroll .images {
     /* padding: 20px 90px 20px 90px; */
-    flex-basis: 20%; /* Permite que ocupen todo el ancho disponible */
-    min-width: 15%; /* Asegura que cada imagen ocupe el 100% del ancho */
-    min-height: 15%; /* Ajusta la altura automáticamente */
+    flex-basis: 25%; /* Permite que ocupen todo el ancho disponible */
+    min-width: 25%; /* Asegura que cada imagen ocupe el 100% del ancho */
+    min-height: 25%; /* Ajusta la altura automáticamente */
   }
 
   .scroll .images img {

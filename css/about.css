@@ -15,17 +15,16 @@
 
 
 .about-me .content1{
-  /* width: 50%; */
   padding: 10px;
 }
 
 .about-me #btns-anchor{
   display: flex;
-  /* justify-content: space-between; */
-  position: relative;
-  /* border-top: 1px solid #3498db; Grosor, estilo y color del borde */
+  position: sticky;
+  top: 20px;
   padding-top: 20px;
   gap: 10px;
+  z-index: 9999;
 }
 
 
@@ -269,6 +268,15 @@
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .about-me #btns-anchor{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* border-top: 1px solid #3498db; Grosor, estilo y color del borde */
+    padding-top: 10px;
+    gap: 10px;
   }
 
   .btn-anchor{

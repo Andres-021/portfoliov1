@@ -10,14 +10,17 @@
   <link rel="stylesheet" href="./css/aptitudes.css">
   <link rel="stylesheet" href="./css/projects.css">
   <link rel="stylesheet" href="./css/skills.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="./style.responsive.css"> -->
-  <title>Portfolio - Sobre</title>
+  <title>Andres021 - Sobre</title>
 </head>
 <body>
   
 
   <!-- <div class="container-principal"> -->
-    
+  <button id="toggle-menu" aria-label="Abrir menú">
+    ☰
+  </button>
     <!-- <div className="Bar-Content"> -->
       <nav id="nav" class="Nav-Content Nav-Content-White">
         <ul class="Nav">
@@ -26,13 +29,13 @@
             <a href="#sobre">Sobre mi</a>
           </li>
           <li class="item">
-            <a href="#proyectos">Proyectos</a>
+            <a href="#proyectos">Experiencias</a>
           </li>
           <li class="item">
             <a href="#aptitudes">Aptitudes</a>
           </li>
           <li class="item">
-            <a href="#Habilidades">Habilidades</a>
+            <a href="#Habilidades">Herramientas</a>
           </li>
           <!-- <li class="li-none-style">
             Modo oscuro 
@@ -54,12 +57,21 @@
         <div id="btns-anchor">
 
           <!-- <a class="btn-anchor" href="#projects">Ver mas</a> -->
-          <a class="btn-anchor" href="https://drive.google.com/file/d/1IRVLqJT5eJgKS5VEOofDIKdQcz175u0F/view?usp=drive_link">Descargar CV</a>
+          <a class="btn-anchor" href="https://drive.google.com/file/d/1ik2Ldg6sk2yDDKvmE2pyPskh_w-8y0Or/view?usp=sharing">Descargar CV</a>
           <!-- <a class="btn-anchor" href="/projects.html">
             Ver proyectos
             <img src="/imgs/About/enlace.svg" alt="Descripción del SVG" width="20" height="20">
           </a> -->
-          <a class="btn-git" href="">Contacto</a>
+          <!-- <a class="btn-git" href="">Contacto</a> -->
+          <a class="btn-social" href="https://www.linkedin.com/in/andres-quintero-026380225/">
+            <img src="/imgs/About/linkedin.svg" alt="Icono de LinkInd" width="100%" height="100%">
+          </a>
+          <a class="btn-social" href="https://github.com/Andres-021">
+            <img src="/imgs/About/github.svg" alt="Icono de Github" width="100%" height="100%">
+          </a>
+          <div id="btns-social-networks">
+    
+          </div>
         </div>
         
       </div>
@@ -68,284 +80,55 @@
         <img id="profile" src="./imgs/About/profile.png" alt="Imagen del Perfil">
         <h3 class="development bold">Desarrollador Web</h3>
         <!-- <h1>Andres Felipe Quintero</h1> -->
-        <div id="btns-social-networks">
-          <a class="btn-social" href="https://www.linkedin.com/in/andres-quintero-026380225/">
-            <img src="/imgs/About/linkedin.svg" alt="Icono de LinkInd" width="20" height="20">
-          </a>
-  
-          <a class="btn-social" href="https://github.com/Andres-021">
-            <img src="/imgs/About/github.svg" alt="Icono de Github" width="20" height="20">
-          </a>
-        </div>
       </div>
     </section>
 
-    <section id="proyectos" class="section container-services">
+    <section id="proyectos" class="section timeline">
+      <!-- <span class="projects-desc"><strong class="pacific">Experiencias</strong> que demuestran mis capacidades</span> -->
+      <span class="projects-desc"><strong class="pacific">Experiencias</strong></span>
 
-      <div class="div-card-desc-projects">
-
-        <span class="projects-desc"><strong class="pacific">Proyectos</strong> que demuestran mis capacidades</span>
-        <!-- <p  class="text">
-          Proyectos que combinan creatividad, tecnología y funcionalidad. 
-          Explora mis creaciones y descubre cómo las ideas cobran vida.
-          Soy una persona que se dedica al aprendizaje autodidacta realizando proyectos personales, freelance y cursos en línea para ampliar cada vez mis conocimientos. Además, estoy estudiando Ing. De sistemas realizando 8mo semestre.
-        </p> -->
-        <a class="btn-anchor" href="/projects.html">Ver proyectos</a>
+      <div class="timeline-item left" data-aos="fade-left">
+        <span class="timeline-item-dot">
+        </span>
+        <div class="timeline-item-content">
+          <span class="date">Julio 2024 – Octubre 2024 · 3 meses</span>
+          <h3 class="timeline-item-title">Desarrollador Backend</h2>
+          <p class="description">Diseño e implementación del backend para app móvil de rutinas.
+            Desarrollo de módulos: usuarios, planes, historial, notificaciones.
+            Integración con frontend mediante APIs RESTful.
+          </p>
+        </div>
+      </div>
+      
+      <div class="timeline-item right" data-aos="fade-right" >
+        <span class="timeline-item-dot">
+        </span>
+        <div class="timeline-item-content">
+          <span class="date">Junio 2023 – Junio 2024 · 12 meses</span>
+          <h3 class="timeline-item-title">Soporte de Sistemas y Desarrollo Web</h2>
+          <p class="description"></p>Desarrollo y mantenimiento web (HTML, CSS, JS, PHP).
+            Soporte técnico.
+            Colaboración en diseño y cumplimiento de requisitos.
+          </p>
+        </div>
+      </div>
+      
+      <div class="timeline-item left" data-aos="fade-left">
+        <span class="timeline-item-dot">
+        </span>
+        <div class="timeline-item-content">
+          <span class="date">Agosto 2021 – Abril 2023 · 1 año y 7 meses</span>
+          <h3 class="timeline-item-title">Desarrollo FullStack</h2>
+          <p class="description">Desarrollo con sensores y microcontroladores.
+            Interfaz web con gráficas.
+            Análisis y visualización bioenergética.
+          </p>
+        </div>
       </div>
 
-      <div class="div-card-scroll-p">
-        <div class="sombra"></div>
-        <!-- <h1>Proyectos</h1> -->
-        <div class="div-card-scroll" style="--t:20s">
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto análisis numérico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-        </div>
-
-        <div class="div-card-scroll" style="--t:40s">
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-            <!-- <div class="card-v-btn">
-              <a class="btn-anchor" href="https://analisis-numerico-app.vercel.app/">Pagina web</a>
-              <a class="btn-git" href="https://github.com/Andres-021/analisis_numerico_app">Github</a>
-            </div> -->
-          </div>
-  
-        </div>
-
-        <div class="div-card-scroll" style="--t:10s">
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-            <!-- <div class="card-v-btn">
-              <a class="btn-anchor" href="https://analisis-numerico-app.vercel.app/">Pagina web</a>
-              <a class="btn-git" href="https://github.com/Andres-021/analisis_numerico_app">Github</a>
-            </div> -->
-          </div>
-  
-        </div>
-
-        <div class="div-card-scroll" style="--t:30s">
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-            <!-- <div class="card-v-btn">
-              <a class="btn-anchor" href="https://analisis-numerico-app.vercel.app/">Pagina web</a>
-              <a class="btn-git" href="https://github.com/Andres-021/analisis_numerico_app">Github</a>
-            </div> -->
-          </div>
-  
-        </div>
-
-        <div class="div-card-scroll" style="--t:50s">
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-            <!-- <div class="card-v-btn">
-              <a class="btn-anchor" href="https://analisis-numerico-app.vercel.app/">Pagina web</a>
-              <a class="btn-git" href="https://github.com/Andres-021/analisis_numerico_app">Github</a>
-            </div> -->
-          </div>
-  
-        </div>
-
-        <div class="div-card-scroll" style="--t:10s">
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-          </div>
-  
-          <div class="card-v">
-            
-            <div class="images">
-              <img class="" src="./imgs/Projects/analisis-numerico-app.png" alt="Imagen del proyecto analisis numerico">
-            </div>
-            <!-- <div class="card-v-btn">
-              <a class="btn-anchor" href="https://analisis-numerico-app.vercel.app/">Pagina web</a>
-              <a class="btn-git" href="https://github.com/Andres-021/analisis_numerico_app">Github</a>
-            </div> -->
-          </div>
-  
-        </div>
-  
-      </div>
+      <!-- Más items -->
     </section>
+
 
 
     <section id="aptitudes" class="section aptitudes">
@@ -353,7 +136,7 @@
       <div class="div-card-desc-aptitudes">
 
         <div class="aptitudes-desc">
-          <span class="">Mis aptitudes mas destacadas para lograr</span>
+          <span class="thin">Mis aptitudes mas destacadas para lograr</span>
           <span class="pacific">mis objetivos</span>
         </div>
 
@@ -472,5 +255,47 @@
   <!-- </div> -->
   
   <script src="./script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 0,
+      delay: 250,
+      duration: 1000,
+      easing: 'ease-in-out', // default easing for AOS animations
+      mirror: false,
+      anchorPlacement: 'top-bottom'
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.getElementById('toggle-menu');
+      const nav = document.querySelector('.Nav-Content');
+
+      toggleBtn.addEventListener('click', () => {
+        nav.classList.toggle('show');
+      });
+  
+      const timeline = document.querySelector('.timeline');
+
+      if (!timeline) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            timeline.classList.add('animate-line');
+          } else {
+            timeline.classList.remove('animate-line'); // permite repetir animación
+          }
+        },
+        {
+          root: null,
+          threshold: 0, // apenas toca el viewport
+        }
+      );
+
+      observer.observe(timeline);
+    });
+  </script>
+
 </body>
 </html>
