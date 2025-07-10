@@ -62,7 +62,6 @@ body::-webkit-scrollbar {
   /* margin-bottom: 20px; */
 }
 
-
 .min-desc {
   display: flex;
   flex-direction: column;
@@ -78,8 +77,6 @@ body::-webkit-scrollbar {
   /* font-family: "Poppins", sans-serif; */
   gap: 5px;
 }
-
-
 
 /* Diferentes estilos para cada parte del texto */
 .thin {
@@ -112,10 +109,6 @@ body::-webkit-scrollbar {
   border-bottom: 2px solid var(--btn);
 }
 
-
-/*  */
-
-
 .hidden{
   opacity: 0;
   transition: all 1s;
@@ -133,14 +126,6 @@ h1{
   /* font-size: 3em; */
   margin: 0;
 }
-
-/* Contenedor principal */
-/* .container-principal{
-  width: 100%;
-  height: 100vh;
-  background-color: aquamarine;
-} */
-/* @media(min-width: 768px){ */
 
 .section{
   /* padding: 250px; */
@@ -206,7 +191,9 @@ h1{
 
 .btn-social{
   /* width: 100%; */
-  height: 40px;
+  height: auto;
+  max-height: 20px;
+  max-width: 20px;
   border-radius: 10px;
   /* border-style: none; */
   text-decoration: none;
@@ -221,18 +208,11 @@ h1{
   transition: background-color .3s;
 }
 
-
 @keyframes fluid {
-    0% { background-position: 0 50% }
-    50% { background-position: 100% 50% }
-    100% { background-position: 0 50% }
+  0% { background-position: 0 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0 50% }
 }
-
-
-
-
-
-
 
 /* FOOTER */
 footer {

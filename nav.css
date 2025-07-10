@@ -12,64 +12,30 @@
   --btn-hover: #0F1035;
 }
 
+/* ---------- Estilos Generales ---------- */
+.Nav-Content {
+  transition: transform 0.3s ease;
+  background-color: #111111d3;
+  z-index: 999;
+}
 
-/* Mobile menu */ 
-/* @media screen and (min-width: 330px) and (max-width: 768px) {
-  #section-title{
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 30px;
-    z-index: 10;
-  }
+.Nav-Content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-  #section-title h3{
-    color: white;
-    font-size: 70px;
-  }
+.Nav-Content li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
 
 
-  .Nav-Content{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background: var(--fnd);
-
-    color: var(--color);
-    position: fixed;
-    z-index: 999;
-    top: 0;
-
-    height: 60px;
-    width: 100%;
-  }
-  
-  .Nav-Content .Nav {
-    display: none;
-    list-style: none;
-    overflow: hidden;
-  }
-  
-  .Nav-Content .Nav li {
-    float: left;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-  }
-  
-  .Nav-Content .Nav li a {
-    display: block;
-    padding: 20px;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-
-} */
-
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 480px) {
   #toggle-menu {
+    display: block;
     position: fixed;
     top: 20px;
     left: 20px;
@@ -87,193 +53,133 @@
     left: 0;
     width: 220px;
     height: 100vh;
-    background-color: #111111ec;
     padding-top: 80px;
-    z-index: 999;
     transform: translateX(-100%);
-    transition: transform 0.3s ease;
-  }
-
-  .Nav-Content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
     flex-direction: column;
-  }
-
-  .Nav-Content li a {
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
   }
 
   .Nav-Content.show {
     transform: translateX(0);
   }
 
+  .Nav-Content .Nav {
+    flex-direction: column;
+  }
 }
 
-
-
-@media screen and (min-width: 1081px) {
-  #section-title{
-    display: none;
-  }
-  /* Estilos para laptops pequeñas o monitores pequeños */
-  .Nav-Content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* Color */
-    background-color: #0F1035;
-
-    /* background: var(--fnd); */
-
-    color: var(--color);
-    /* Posicionamiento y fijado */
+/* ---------- Móvil: ≤768px ---------- */
+@media screen and (min-width:481px ) and (max-width: 768px) {
+  #toggle-menu {
+    display: block;
     position: fixed;
-    z-index: 999;
-    /* Centrado y flote */
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+  .Nav-Content {
+    position: fixed;
     top: 0;
     left: 0;
+    width: 220px;
+    height: 100vh;
+    padding-top: 80px;
+    transform: translateX(-100%);
+    flex-direction: column;
+  }
 
+  .Nav-Content.show {
+    transform: translateX(0);
+  }
+
+  .Nav-Content .Nav {
+    flex-direction: column;
+  }
+}
+
+/* ---------- Tablet/media: 769px–1080px ---------- */
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+  #toggle-menu {
+    display: none;
+  }
+
+  .Nav-Content {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100%;
-    width: 10%;
-    margin-left: 0px;
-
+    width: 12%;
+    background-color: #0F1035;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-
-
-  .Nav-Content-White{
-    color: var(--fnd);
-
-    &&>.Nav{
-
-      &&>li{
-        /* border-top: 2px solid #0F1035;
-        border-bottom: 2px solid #0F1035; */
-
-        &&:hover{
-          color: var(--btn);
-          border-top: 2px solid var(--btn);
-          border-bottom: 2px solid var(--btn);
-
-        }
-      }
-    }
-  }
-
-
-  /* .Nav-Content .Nav{
-      margin:0 0px 0 0;
-    } */
-
-  /* .Nav-Content .Nav-Tittle{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      flex: 1;
-      background:var(--fnd);
-      color:var(--color);
-      height:auto;
-    }
-
-    .Nav-Content .Nav-Tittle .logo{
-      margin: 10px 10px;
-    } */
-
-  /* .Nav-Content .Nav{
-      display:flex;
-      list-style:none;
-      align-items: center;
-      padding-left: 100px;
-      overflow: hidden;
-    } */
 
   .Nav-Content .Nav {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    /* width: 80%;o lo necesario */
-    margin: auto;
-    padding-left: 0;
   }
-
-  /* .Nav-Content .Nav li{
-      display:flex;
-      justify-content: center;
-      align-items:center;
-      padding: 20px 40px;
-      height:100%;
-      width: 100%;
-    } */
 
   .Nav-Content .Nav li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 120px;
-    margin-top: 10px;
+    margin: 10px 0;
+    font-size: 18px;
     border-top: 2px solid #0F1035;
     border-bottom: 2px solid #0F1035;
-
-    font-size: 18px;
-    /* font-weight: bold; */
-    /* font-weight: 600; */
-    /* letter-spacing: 0.5px; */
-    
-    transition: 0.5s;
-  }
-
-  .Nav-Content .Nav .li-none-style {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border-radius:50%; */
-    height: 50px;
-    width: 160px;
-    margin-top: 10px;
-    border-top: 0px solid var(--color);
-    border-bottom: 0px solid var(--color);
-    transition: 0.5s;
-
-    font-size: 14px;
+    transition: 0.3s;
   }
 
   .Nav-Content .Nav li:hover {
-    /* background: var(--color); */
-    background: transparent;
-    color: var(--fnd);
-    cursor: pointer;
-    border-top: 2px solid var(--fnd);
-    border-bottom: 2px solid var(--fnd);
-    font-weight: bold;
-    transition: 0.5s;
+    color: var(--btn);
+    border-top: 2px solid var(--btn);
+    border-bottom: 2px solid var(--btn);
+  }
+}
+
+
+/* ---------- Escritorio: ≥1081px ---------- */
+@media screen and (min-width: 1081px) {
+  #toggle-menu {
+    display: none;
   }
 
-  .Nav-Content .Nav .li-none-style:hover {
-    background: transparent;
-    color: rgb(212, 212, 212);
-    /* cursor: pointer; */
-    border-top: 0px solid var(--fnd);
-    border-bottom: 0px solid var(--fnd);
-    font-size: 14px;
+  .Nav-Content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+    background-color: #0F1035;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Nav-Content .Nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Nav-Content .Nav li {
+    margin: 10px 0;
     height: 50px;
-    width: 160px;
+    /* width: 120px; */
+    font-size: 16px;
+    border-top: 2px solid #0F1035;
+    border-bottom: 2px solid #0F1035;
     transition: 0.5s;
   }
 
-  /* Cambiando el diseño de los linsk e items */
-  .Nav-Content .Nav li a {
-    display: block;
-    text-decoration: none;
-    cursor: pointer;
-    color: inherit;
-    /* font-size: 40px; */
-    /* font-weight: 600; */
+  .Nav-Content .Nav li:hover {
+    color: var(--btn);
+    border-top: 2px solid var(--btn);
+    border-bottom: 2px solid var(--btn);
+    font-weight: bold;
   }
 }

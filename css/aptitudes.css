@@ -61,7 +61,7 @@
   box-sizing: border-box;
   /* Incluye padding y bordes en el tamaño */
   color: #ffffff;
-  font-size: var(--font-subtitle);
+  font-size: var(--font-small);
 }
 
 .aptitudes ul li img {
@@ -137,6 +137,10 @@
     padding: 0;
     margin: 0;
     gap: 20px;
+  }
+
+  .aptitudes ul li {
+    font-size: var(--font-subtitle);
   }
 
   .aptitudes ul li img {
